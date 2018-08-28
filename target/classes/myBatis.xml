@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="mybatis" class="com.test.diEx04.MyBatisDao"/>
+	
+<bean id="service" class="com.test.diEx04.MyBatisService">
+	<!-- setterXXXXXX() set을 제외한 xxxxx를 프로퍼티의 Name 으로 사용한다.
+		해당클래스에 setMyBatisDao()를 호출 한는 것이다. 이러한 방식을 프로퍼트 방식이라고 한다.
+		
+		MyBatisDao mybatis = new MyBatisDao();
+		MyBatisService service = new MyBaticeService();
+		service.setMyBatisDao(mybatis);
+		service.metho..... 사용
+		
+		
+	 -->
+	<property name="myBatisDao" ref="mybatis"/>
+	
+
+</bean>
+</beans>

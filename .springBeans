@@ -11,6 +11,7 @@
 		<config>src/main/resources/getsum.xml</config>
 		<config>src/main/resources/examdao.xml</config>
 		<config>src/main/resources/person.xml</config>
+		<config>src/main/resources/myBatis.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
