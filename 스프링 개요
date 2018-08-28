@@ -71,6 +71,17 @@ public class BB {
 
 
 
+**인터페이스를 임플리먼트한 클래스의 경우는 인터페이스로 객체 생성하는 것이 가능하다.
+->
+interface
+TestDAO --> TestDAOImp implement TestDAO
+
+TestDAO ts = new TestDAOImp 가 가능하다는 것이다.
 
 
 
+## [ 의존성 주입 종류 ]
+setter(설정 메소드)를 이용한 주입
+ :설정 메소드를 사용해서 의존성을 주입하는 것
+constructor(생성자)를 통한 주입
+ : 생성자를 사용해서의존성을 주입하는 것
