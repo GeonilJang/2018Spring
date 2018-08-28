@@ -4,6 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="examdao" class="com.test.diEx02.ExamDao">
-		<constructor-arg value="Hello Spring"/>	
+		<constructor-arg value="Hello Spring"/>
+		<!-- <property name="msg" value="안녕 자바"/> -->
 	</bean>
 </beans>

@@ -12,5 +12,11 @@ public class ExamDao {
 	public void outputMsg() {
 		System.out.println("msg : "+msg);
 	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+	
+	
 	
 }
